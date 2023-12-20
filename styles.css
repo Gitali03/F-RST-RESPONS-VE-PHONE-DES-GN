@@ -1,0 +1,57 @@
+.card{
+    border: 5px solid #ccc;
+    border-radius: 5px;
+
+}
+.card-all{
+max-width: 360px;
+margin-right: auto;
+margin-left: auto;
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+@media screen and (min-width:576px) {
+    .card-all{
+        flex-direction:row ;
+        flex-wrap: wrap;
+        max-width: 720px;
+    }
+}
+@media screen and (min-width:992px) {
+    .card-all{
+        max-width: 960px;
+    }
+}
+@media screen and (min-width:576px) {
+    .card{
+        width: calc((100% - 30px - 4px)/2);
+      
+    }
+    
+}
+@media screen and (min-width:992px){
+    .card{
+        width:calc((100% -60px -6px)/3);
+    }
+}
+
+
+.card-image> img{
+object-fit: cover;
+width: 100%;
+height: 165px;
+}
+.card-body{
+padding: 4px;
+}
+.card-info{
+margin-bottom: 5px;
+font-size: 1.40rem;
+}
+.card-title{
+    text-align: left;
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
